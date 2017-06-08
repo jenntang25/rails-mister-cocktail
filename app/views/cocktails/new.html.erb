@@ -1,0 +1,17 @@
+<div class="text-center">
+<h2>Add a Cocktail</h2>
+
+<ul>
+  <li class="list-unstyled">
+
+  <%= simple_form_for @cocktail do |f| %>
+  <% f.error_notification %>
+  <%= f.input :name %>
+  <%= f.button :submit %>
+  <% end %>
+  </li>
+    </ul>
+</div>
+
+
+<%= link_to 'Back', cocktails_path %>

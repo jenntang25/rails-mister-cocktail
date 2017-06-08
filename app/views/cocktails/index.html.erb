@@ -1,0 +1,20 @@
+<div class="text-center">
+    <h1>The Cocktail</h1>
+    <br>
+  <ul class="list-unstyled" >
+  <% @cocktails.each do |cocktail| %>
+  <hr>
+  <li>
+    <h2><%= cocktail.name %></h2>
+     <p class="btn btn-danger"><%= link_to 'Show', cocktail_path(cocktail) %></p>
+     <p class="btn btn-default" ><%= link_to "New Cocktail", new_cocktail_path %></p>
+  </li>
+  <hr>
+
+<% end %>
+<br>
+
+
+</ul>
+</div>
+

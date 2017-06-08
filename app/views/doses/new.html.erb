@@ -1,0 +1,22 @@
+<div class="text-center">
+  <div class="form-group">
+
+   <h1>New Dose</h1>
+  <ul>
+    <li class="list-unstyled">
+
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <% f.error_notification %>
+
+    <%= f.input :description %>
+    <%= f.button :submit %>
+    </li>
+    <% end %>
+  </ul>
+    </div>
+
+<%= link_to 'Back', cocktails_path %>
+</div>
+
+
+
